@@ -7,6 +7,8 @@ export default async function Home() {
   if (session) {
     return <div>
       <div>Your name is {session.user?.name}</div>
+      <div>Your email is {session.user?.email}</div>
+      <br />
       <div><Logout /> </div>
     </div>
   }
